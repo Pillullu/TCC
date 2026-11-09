@@ -1,0 +1,148 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #10111b;
+    color: #f1f1f5;
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+header {
+    background: #191b2b;
+    padding: 30px 8%;
+    border-bottom: 1px solid #30334a;
+}
+
+header h1 {
+    color: #a78bfa;
+    font-size: 32px;
+}
+
+header p {
+    color: #a5a5b5;
+    margin-top: 6px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 24px;
+}
+
+section {
+    background: #191b2b;
+    border: 1px solid #30334a;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #c4c4d4;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #41445c;
+    border-radius: 7px;
+    background: #10111b;
+    color: white;
+    outline: none;
+    margin-bottom: 16px;
+}
+
+input:focus-visible {
+    border-color: #a78bfa;
+    outline: 2px solid #c4b5fd;
+    outline-offset: 2px;
+}
+
+button {
+    background: #7c5ce0;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #9478f0;
+}
+
+button:focus-visible {
+    outline: 2px solid #c4b5fd;
+    outline-offset: 3px;
+}
+
+#lista-jogos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.card-jogo {
+    background: #24263a;
+    padding: 18px;
+    border-radius: 9px;
+    border: 1px solid #383b54;
+}
+
+.card-jogo h3 {
+    color: #c4b5fd;
+    margin-bottom: 8px;
+}
+
+.card-jogo > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#mensagem {
+    margin-top: 16px;
+    color: #c4b5fd;
+}
+
+@media (max-width: 600px) {
+    main {
+        margin: 24px auto;
+        padding: 0 16px;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    header {
+        padding: 24px 16px;
+    }
+}
+.rodape {
+    background-color: #1a1a2e;
+    color: #bdbdbd;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #3a3a55;
+    font-size: 14px;
+}
+
+.rodape p {
+    margin: 5px 0;
+}
